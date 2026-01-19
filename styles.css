@@ -1,4 +1,3 @@
-/* Estilos generales - Tema Azul Claro */
 /* Estilos generales - Tema Rosa Pastel */
 * {
     margin: 0;
@@ -99,24 +98,24 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Hero section - Con fondo marrón */
+/* Hero section - TODO ROSA (quitado el marrón) */
 .hero {
-    background: linear-gradient(rgba(143, 78, 110, 0.8), rgba(194, 131, 176, 0.8)), 
+    background: linear-gradient(rgba(255, 182, 193, 0.9), rgba(255, 155, 170, 0.9)), 
                 url('WhatsApp Image 2026-01-18 at 10.21.02 PM.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
     color: white;
     margin-bottom: 40px;
 }
 
 .hero h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: white;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
@@ -149,15 +148,15 @@ nav a:hover {
 
 /* Sección de carta */
 .menu {
-    padding: 50px 0;
+    padding: 60px 0;
     position: relative;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: #ff6b93; /* Rosa */
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
     padding: 0 10px;
 }
@@ -174,11 +173,11 @@ nav a:hover {
 
 /* Títulos de categoría */
 .category-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #ff6b93; /* Rosa */
-    margin: 50px 0 25px 0;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #ffb6c1;
+    margin: 60px 0 30px 0;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #ffb6c1;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 0 10px;
@@ -188,11 +187,11 @@ nav a:hover {
 .carousel-auto-container {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(255, 107, 147, 0.2);
-    margin: 0 auto 30px;
+    box-shadow: 0 10px 30px rgba(255, 107, 147, 0.25);
+    margin: 0 auto 40px;
 }
 
 .carousel-track {
@@ -230,27 +229,27 @@ nav a:hover {
     right: 0;
     background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
     color: white;
-    padding: 25px;
+    padding: 30px;
     z-index: 2;
 }
 
 .slide-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .slide-desc {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 12px;
     opacity: 0.9;
     max-width: 100%;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .slide-price {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #ffb6c1; /* Rosa claro */
     background-color: rgba(255, 255, 255, 0.15);
@@ -267,7 +266,7 @@ nav a:hover {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 20px;
     transform: translateY(-50%);
     z-index: 3;
 }
@@ -276,10 +275,10 @@ nav a:hover {
     background-color: rgba(255, 107, 147, 0.8);
     color: white;
     border: none;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     cursor: pointer;
     transition: all 0.3s;
     display: flex;
@@ -365,31 +364,31 @@ nav a:hover {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 25px;
+    gap: 30px;
     margin-bottom: 40px;
     padding: 0 10px;
 }
 
 .product-card {
     background-color: white;
-    border-radius: 12px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.2);
+    box-shadow: 0 8px 20px rgba(255, 182, 193, 0.25);
     transition: all 0.3s;
-    border: 1px solid #ffe4e9;
+    border: 2px solid #ffe4e9;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(255, 107, 147, 0.25);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 107, 147, 0.3);
     border-color: #ffb6c1;
 }
 
 .product-img {
-    height: 180px;
+    height: 200px;
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -402,7 +401,7 @@ nav a:hover {
 }
 
 .product-card:hover .product-img img {
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
 .product-content {
@@ -413,7 +412,7 @@ nav a:hover {
 }
 
 .product-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #ff6b93; /* Rosa */
     margin-bottom: 10px;
     flex-shrink: 0;
@@ -422,85 +421,246 @@ nav a:hover {
 
 .product-content p {
     color: #666;
-    font-size: 0.95rem;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.5;
     margin-bottom: 15px;
     flex-grow: 1;
 }
 
 .product-price {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #ff4773; /* Rosa oscuro */
     margin-top: 10px;
     flex-shrink: 0;
 }
 
-/* Sección de información - Rosa claro */
+/* Sección de información - CORREGIDA */
 .info {
-    padding: 60px 0;
-    background: linear-gradient(to bottom, #fff0f5, #ffe4e9); /* Rosa muy claro */
-    margin-top: 50px;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fff0f5 0%, #ffe4e9 100%);
+    margin-top: 60px;
+    border-top: 3px solid #ffb6c1;
+    border-bottom: 3px solid #ffb6c1;
+}
+
+.info .container {
+    padding: 0 20px;
 }
 
 .info-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 0 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
 }
 
 .info-card {
     background-color: white;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.2);
+    border-radius: 20px;
+    padding: 35px 30px;
+    box-shadow: 0 10px 25px rgba(255, 182, 193, 0.2);
     text-align: center;
-    transition: all 0.3s;
-    border: 1px solid #ffd1dc;
+    transition: all 0.4s;
+    border: 2px solid #ffd1dc;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 25px rgba(255, 107, 147, 0.25);
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(255, 107, 147, 0.25);
+    border-color: #ff6b93;
 }
 
 .info-card i {
-    font-size: 2.8rem;
-    color: #ff6b93; /* Rosa */
-    margin-bottom: 20px;
+    font-size: 3.5rem;
+    color: #ff6b93;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #ffb6c1, #ff6b93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .info-card h3 {
-    font-size: 1.6rem;
-    color: #ff6b93; /* Rosa */
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #ff6b93;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .info-card p {
     color: #666;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    flex-grow: 1;
 }
 
 .info-card strong {
-    color: #ff4773; /* Rosa oscuro */
+    color: #ff4773;
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 10px;
 }
 
 .info-card span {
-    color: #ff6b93; /* Rosa */
-    font-weight: 600;
+    color: #ff6b93;
+    font-weight: 700;
+    font-size: 1.1rem;
+    min-width: 120px;
+    display: inline-block;
+    text-align: left;
 }
 
 /* Footer - Rosa oscuro */
 footer {
-    background: linear-gradient(to right, #ff6b93, #ff4773); /* Rosa gradiente */
+    background: linear-gradient(135deg, #ff6b93 0%, #ff4773 100%);
     color: white;
-    padding: 50px 0 25px;
-    margin-top: 60px;
+    padding: 60px 0 30px;
+    margin-top: 80px;
 }
 
 .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.footer-logo p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.footer-contact h4, .footer-hours h4 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.footer-contact p, .footer-hours p {
+    margin-bottom: 12px;
     display: flex;
-    flex-direction: column; }
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.footer-contact i {
+    color: #ffb6c1;
+    margin-right: 10px;
+    min-width: 20px;
+    font-size: 1.1rem;
+}
+
+.footer-hours p span {
+    font-weight: 700;
+    min-width: 100px;
+    display: inline-block;
+    color: #ffd1dc;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+}
+
+.copyright p {
+    margin-bottom: 10px;
+}
+
+.copyright small {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .logo {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .carousel-auto-container {
+        height: 350px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .info-card {
+        padding: 25px 20px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .category-title {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-auto-container {
+        height: 300px;
+    }
+    
+    .slide-title {
+        font-size: 1.6rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
