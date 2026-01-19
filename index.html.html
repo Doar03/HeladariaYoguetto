@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogurt Heladería - Helados de Yogurt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo blanco agregado -->
+                <img src="image.jpg" alt="Yogurt Heladería" class="logo-img">
+                <div class="logo-text">
+                    <h1>YOGURT HELADERÍA</h1>
+                    <p class="tagline">HELADERÍA Y MUCHO MÁS</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#carta">Carta</a></li>
+                    <li><a href="#informacion">Información</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección hero con fondo marrón -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Helados de Yogurt Deliciosos y Saludables</h2>
+            <p>En Yogurt Heladería creamos momentos dulces con nuestros helados de yogurt 100% naturales. Disfruta de sabores únicos en Popayán, Colombia.</p>
+            <a href="#carta" class="cta-button">Ver Nuestra Carta</a>
+        </div>
+    </section>
+
+    <!-- Sección de Carta con Carrusel Automático -->
+    <section id="carta" class="menu">
+        <div class="container">
+            <h2 class="section-title">Nuestra Carta Completa</h2>
+            
+            <!-- Carrusel Automático -->
+            <div class="carousel-auto-container">
+                <div class="carousel-track">
+                    <!--  Helados de Yogur -->
+                    <div class="carousel-slide">
+                        <img src="https://media.istockphoto.com/id/185124295/es/foto/surtido-de-yogur-helado.jpg?s=612x612&w=0&k=20&c=Gvf1gSDZrKkF6sycFPk1Q5nf6oBBHnzoNRCu7KB3AE4=" alt="Helados de Yogur">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Helados de Yogurt</h3>
+                            <p class="slide-desc">Deliciosos helados de yogurt natural con topping a tu elección</p>
+                            <div class="slide-price">Desde $3.500</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2: Browne -->
+                    <div class="carousel-slide">
+                        <img src="https://images.unsplash.com/photo-1570145820259-b5b80c5c8bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Brownie con Helado">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Browne</h3>
+                            <p class="slide-desc">Exquisito brownie de chocolate con helado de yogurt</p>
+                            <div class="slide-price">$9.000</div>
+                        </div>
+                    </div>
+                    
+                    <!--  3: Banana Split -->
+                    <div class="carousel-slide">
+                        <img src="https://i.blogs.es/8b68b2/banana_split/1200_900.jpg" alt="Banana Split">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Banana Split</h3>
+                            <p class="slide-desc">Plátano con tres bolas de helado de yogurt y toppings</p>
+                            <div class="slide-price">$11.100</div>
+                        </div>
+                    </div>
+                    
+                    <!--  4: Waffle -->
+                    <div class="carousel-slide">
+                        <img src="https://laensaladeria.co/wp-content/uploads/2023/04/318509291_591727452955718_1322621607761209595_n.jpg" alt="Waffle">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Waffle con Helado</h3>
+                            <p class="slide-desc">Waffle caliente con helado de yogurt y salsa de chocolate</p>
+                            <div class="slide-price">$13.000</div>
+                        </div>
+                    </div>
+                    
+                    <!--  5: fresas con crema-->
+                    <div class="carousel-slide">
+                        <img src="https://d2j9trpqxd6hrn.cloudfront.net/uploads/recipe/picture/566/como_hacer_fresas_con_crema_2.webp" alt="Fresas con crema">
+                        <div class="slide-content">
+                            <h3 class="slide-title">Fresas con crema</h3>
+                            <p class="slide-desc">Nuestra especialidad</p>
+                            <div class="slide-price">$15.500</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botones de navegación -->
+                <div class="carousel-nav">
+                    <button class="carousel-nav-btn prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav-btn next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Indicadores -->
+            <div class="carousel-indicators"></div>
+            
+            <!-- Controles -->
+            <div class="carousel-controls">
+                <button class="play-btn" style="display: none;">
+                    <i class="fas fa-play"></i> Reanudar
+                </button>
+                <button class="pause-btn">
+                    <i class="fas fa-pause"></i> Pausar
+                </button>
+            </div>
+            
+            <!--  HELADOS YOGURT -->
+            <h3 class="category-title">HELADOS YOGURT</h3>
+            <div class="products-grid">
+                <!-- Pequeño 1 Adición -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://ice-creami.com/wp-content/uploads/2024/11/yaourt-glace-ninja-creami-1-1024x726.jpg" alt="Helado Pequeño">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Pequeño 1 Adición</h3>
+                        <p>Helado de yogurt con 1 adición incluida</p>
+                        <div class="product-price">$ 4.700</div>
+                    </div>
+                </div>
+                
+                <!-- Mediano 2 Adiciones -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://media.istockphoto.com/id/185124295/es/foto/surtido-de-yogur-helado.jpg?s=612x612&w=0&k=20&c=Gvf1gSDZrKkF6sycFPk1Q5nf6oBBHnzoNRCu7KB3AE4=" alt="Helado Mediano">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Mediano 2 Adiciones</h3>
+                        <p>Helado de yogurt con 2 adiciones incluidas</p>
+                        <div class="product-price">$ 5.700</div>
+                    </div>
+                </div>
+                
+                <!-- Grande 3 Adiciones -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://media.istockphoto.com/id/1322182871/es/foto/hacer-yogur-congelado-con-virutas-de-chocolate-y-espolvorear-en-el-buffet.jpg?s=612x612&w=0&k=20&c=7bYR_S5wU4caRVyNfbHlDOJooRUq_afnvvdcLBUHGDg=" alt="Helado Grande">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Grande 3 Adiciones</h3>
+                        <p>Helado de yogurt con 3 adiciones incluidas</p>
+                        <div class="product-price">$ 7.000</div>
+                    </div>
+                </div>
+                
+                <!-- Super 4 Adiciones -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://imagedelivery.net/olI9wp0b6luWFB9nPfnqjQ/res/abillionveg/image/upload/zcf4sb22ziln5rrwbmpe/1576291896.jpg/public" alt="Helado Super">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Super 4 Adiciones</h3>
+                        <p>Helado de yogurt con 4 adiciones incluidas</p>
+                        <div class="product-price">$ 9.000</div>
+                    </div>
+                </div>
+                
+                <!-- Cono -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://media.istockphoto.com/id/482343420/es/foto/helado-de-m%C3%A1quina.jpg?s=612x612&w=0&k=20&c=iBPhsBqCF-HlzcBgCtdoaHwls8R5T6xbw12mo70jdV0=" alt="Cono">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Cono</h3>
+                        <p>Cono tradicional con helado de yogurt</p>
+                        <div class="product-price">$ 3.500</div>
+                    </div>
+                </div>
+                
+                <!-- Adición -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://media.istockphoto.com/id/1736596741/es/foto/tabla-de-toppings-variados.jpg?s=612x612&w=0&k=20&c=j7VCyrU0iOkWjFSLmRsRxwFlq0NJrBq3J0zXjNzaXIE=" alt="Adición">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Adición</h3>
+                        <p>Toppings adicionales para tu helado</p>
+                        <div class="product-price">$ 2.000</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CATEGORÍA: ESPECIALES -->
+            <h3 class="category-title">ESPECIALES</h3>
+            <div class="products-grid">
+                <!-- Browne -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1570145820259-b5b80c5c8bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Browne">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Browne</h3>
+                        <p>Brownie con helado de yogurt y salsa de chocolate</p>
+                        <div class="product-price">$ 9.000</div>
+                    </div>
+                </div>
+                
+                <!-- Banana Split -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://i.blogs.es/8b68b2/banana_split/1200_900.jpg" alt="Banana Split">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Banana Split</h3>
+                        <p>Plátano con tres bolas de helado y toppings</p>
+                        <div class="product-price">$ 11.100</div>
+                    </div>
+                </div>
+                
+                <!-- Waffle -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://laensaladeria.co/wp-content/uploads/2023/04/318509291_591727452955718_1322621607761209595_n.jpg" alt="Waffle">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Waffle</h3>
+                        <p>Waffle caliente con helado de yogurt</p>
+                        <div class="product-price">$ 13.000</div>
+                    </div>
+                </div>
+                
+                <!-- Estrella -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-i-JhpVgycITHgD0BR9-XVMx4IqrjRYV1RQ&s" alt="Estrella">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Estrella</h3>
+                        <p>Especialidad con 5 tipos de helados</p>
+                        <div class="product-price">$ 17.000</div>
+                    </div>
+                </div>
+                
+                <!-- Malteada -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://cdn7.kiwilimon.com/recetaimagen/3666/960x640/10613.jpg.jpg" alt="Malteada">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Malteada</h3>
+                        <p>Malteada de helado de yogurt. Sabores variados</p>
+                        <div class="product-price">$ 10.700</div>
+                    </div>
+                </div>
+                
+                <!-- Fresas con Crema -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://d2j9trpqxd6hrn.cloudfront.net/uploads/recipe/picture/566/como_hacer_fresas_con_crema_2.webp" alt="Fresas con Crema">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Fresas con Crema</h3>
+                        <p>Fresas frescas con crema y helado de yogurt</p>
+                        <div class="product-price">$ 15.500</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CATEGORÍA: OCASIONALES -->
+            <h3 class="category-title">OCASIONALES</h3>
+            <div class="products-grid">
+                <!-- Café -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Café">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Café</h3>
+                        <p>Café colombiano 100% puro. Americano o con leche</p>
+                        <div class="product-price">$ 2.000</div>
+                    </div>
+                </div>
+                
+                <!-- Obleas -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/E344QEJTUJGZFGUGEUT3D45OFE.jpg" alt="Obleas">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Obleas</h3>
+                        <p>Obleas crujientes con arequipe y queso</p>
+                        <div class="product-price">$ 6.000</div>
+                    </div>
+                </div>
+                
+                <!-- Helados Caseros -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://www.recetario-cocina.com/archivosbd/helados-caseros-de-frutas.jpg" alt="Helados Caseros">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Helados Caseros</h3>
+                        <p>Helados tradicionales preparados artesanalmente</p>
+                        <div class="product-price">$ 3.500</div>
+                    </div>
+                </div>
+                
+                <!-- Ensalada de Frutas -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1564093497595-593b96d80180?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ensalada de Frutas">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Ensalada de Frutas</h3>
+                        <p>Mezcla fresca de frutas con yogurt natural</p>
+                        <div class="product-price">$ 15.500</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Información -->
+    <section id="informacion" class="info">
+        <div class="container">
+            <h2 class="section-title">Nuestra Heladería</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ubicación</h3>
+                    <p>Estamos ubicados en el corazón de Popayán, Colombia. ¡Ven a visitarnos!</p>
+                    <p><strong>Calle 5 # 27-29, Popayán, Colombia</strong></p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Teléfono</h3>
+                    <p>Realiza pedidos a domicilio o reserva para eventos especiales.</p>
+                    <p><strong>3117229699</strong></p>
+                </div>
+                
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horario de Atención</h3>
+                    <p>Te atendemos con una sonrisa en los siguientes horarios:</p>
+                    <p><span>Lun-Vie:</span> 8:00 AM - 6:30 PM</p>
+                    <p><span>Sáb-Dom:</span> 9:00 AM - 7:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h3>YOGURT HELADERÍA</h3>
+                    <p>Helados de yogurt 100% naturales</p>
+                    <p>Desde 2020 endulzando Popayán</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle 5 # 27-29, Popayán, Colombia</p>
+                    <p><i class="fas fa-phone"></i> 3117229699</p>
+                    <p><i class="fas fa-envelope"></i> yogurt.heladeria@gmail.com</p>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Horarios</h4>
+                    <p><span>Lun-Vie:</span> 8:00 AM - 6:30 PM</p>
+                    <p><span>Sáb-Dom:</span> 9:00 AM - 7:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span class="current-year">2024</span> Yogurt Heladería - Todos los derechos reservados.</p>
+                <p><small>Disfruta de nuestros deliciosos helados de yogurt</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

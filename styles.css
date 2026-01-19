@@ -1,0 +1,506 @@
+/* Estilos generales - Tema Azul Claro */
+/* Estilos generales - Tema Rosa Pastel */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f7; /* Rosa muy claro */
+    color: #555;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header y navegación - Rosas */
+header {
+    background: linear-gradient(to right, #ff9eb5, #ff85a2); /* Rosa fuerte */
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.tagline {
+    font-size: 0.9rem;
+    color: white;
+    opacity: 0.9;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+    padding: 8px 16px;
+    border-radius: 25px;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Hero section - Con fondo marrón */
+.hero {
+    background: linear-gradient(rgba(143, 78, 110, 0.8), rgba(194, 131, 176, 0.8)), 
+                url('WhatsApp Image 2026-01-18 at 10.21.02 PM.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6b93; /* Rosa fuerte */
+    color: white;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 107, 147, 0.4);
+    border: 2px solid white;
+}
+
+.cta-button:hover {
+    background-color: #ff4773; /* Rosa más oscuro */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 71, 115, 0.5);
+}
+
+/* Sección de carta */
+.menu {
+    padding: 50px 0;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #ff6b93; /* Rosa */
+    margin-bottom: 40px;
+    position: relative;
+    padding: 0 10px;
+}
+
+.section-title:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #ffb6c1; /* Rosa claro */
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+/* Títulos de categoría */
+.category-title {
+    font-size: 1.6rem;
+    color: #ff6b93; /* Rosa */
+    margin: 50px 0 25px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffb6c1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 10px;
+}
+
+/* Contenedor del carrusel automático */
+.carousel-auto-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(255, 107, 147, 0.2);
+    margin: 0 auto 30px;
+}
+
+.carousel-track {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: transform 0.8s ease-in-out;
+    width: 100%;
+}
+
+/* Cada slide del carrusel */
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+}
+
+/* Información sobre la imagen */
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    padding: 25px;
+    z-index: 2;
+}
+
+.slide-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slide-desc {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    opacity: 0.9;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+.slide-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffb6c1; /* Rosa claro */
+    background-color: rgba(255, 255, 255, 0.15);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+}
+
+/* Botones de navegación del carrusel */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.carousel-nav-btn {
+    background-color: rgba(255, 107, 147, 0.8);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-nav-btn:hover {
+    background-color: rgba(255, 71, 115, 0.9);
+    transform: scale(1.1);
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    z-index: 3;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffb6c1; /* Rosa claro */
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.carousel-indicator.active {
+    background-color: #ff6b93; /* Rosa */
+    transform: scale(1.2);
+    border-color: white;
+}
+
+.carousel-indicator:hover {
+    background-color: #ff4773; /* Rosa oscuro */
+    transform: scale(1.1);
+}
+
+/* Botones de control del carrusel */
+.play-btn, .pause-btn {
+    background-color: #ff6b93; /* Rosa */
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    margin: 0 8px;
+}
+
+.play-btn:hover, .pause-btn:hover {
+    background-color: #ff4773; /* Rosa oscuro */
+    transform: translateY(-2px);
+}
+
+.play-btn i, .pause-btn i {
+    font-size: 0.95rem;
+}
+
+/* Controles del carrusel */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas de productos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.2);
+    transition: all 0.3s;
+    border: 1px solid #ffe4e9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 107, 147, 0.25);
+    border-color: #ffb6c1;
+}
+
+.product-img {
+    height: 180px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.08);
+}
+
+.product-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 1.3rem;
+    color: #ff6b93; /* Rosa */
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    line-height: 1.3;
+}
+
+.product-content p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.product-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ff4773; /* Rosa oscuro */
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+/* Sección de información - Rosa claro */
+.info {
+    padding: 60px 0;
+    background: linear-gradient(to bottom, #fff0f5, #ffe4e9); /* Rosa muy claro */
+    margin-top: 50px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 10px;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(255, 182, 193, 0.2);
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid #ffd1dc;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 107, 147, 0.25);
+}
+
+.info-card i {
+    font-size: 2.8rem;
+    color: #ff6b93; /* Rosa */
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    font-size: 1.6rem;
+    color: #ff6b93; /* Rosa */
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.info-card strong {
+    color: #ff4773; /* Rosa oscuro */
+}
+
+.info-card span {
+    color: #ff6b93; /* Rosa */
+    font-weight: 600;
+}
+
+/* Footer - Rosa oscuro */
+footer {
+    background: linear-gradient(to right, #ff6b93, #ff4773); /* Rosa gradiente */
+    color: white;
+    padding: 50px 0 25px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; }
